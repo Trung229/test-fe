@@ -1,0 +1,112 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container-search{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-search .box-search{
+    position: relative;
+    margin-right: 10px;
+}
+.container-search .box-search .icon-search{
+    position: absolute;
+    left: 0;
+    padding: 7px 10px
+}
+.container-search .box-search .icon-close{
+    position: absolute;
+    right: 4px;
+    padding: 7px 10px
+}
+.container-search .box-search .box-search-input{
+    padding: 5px;
+    padding-left: 30px;
+    min-width: 300px;
+    border: 1px solid rgb(71, 204, 200);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container-search .box-search .box-search-input:focus-visible{
+    outline: 1px solid rgb(71, 204, 200);
+}
+.container-search .buttonFilter{
+    margin-right: 10px;
+    padding: 5px 20px;
+    background-color: rgb(48, 203, 159);
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: .5px .2px 5px #888888;
+    cursor: pointer;
+    opacity: .9;
+}
+
+.container-search .buttonFilter:hover{
+    opacity: 1;
+}
+
+.result-container{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.result-container .result-item{
+    display: flex;
+    align-items: center;
+    height: 186px;
+    min-width: 500px;
+    border: 1px solid rgb(184, 183, 183);
+    margin-top: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 0 20px;
+    box-shadow: .5px .2px 5px rgb(184, 183, 183);
+}
+.result-container .result-item img{
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.result-container .result-item .container-info{
+    margin-left: 10px;
+}
+
+.result-container .result-item .container-info .name{
+    font-weight: 800;
+    color: rgb(60, 81, 61);
+}
+.result-container .result-item .container-info .address{
+    font-weight: 300;
+    font-size: 13px;
+}
+.result-container .result-item .container-info .badge{
+    display: flex;
+    text-align: center;
+}
+.result-container .result-item .container-info .badge span{
+    border: 1px solid rgb(236, 237, 238);
+    font-size: 10px;
+    min-width: 30px;
+    padding:5px;
+    border-radius: 10px;
+    margin-right: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} 
